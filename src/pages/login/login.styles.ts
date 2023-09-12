@@ -1,7 +1,17 @@
 import styled from 'styled-components';
 import { BsFillPersonFill, BsEnvelopeFill, BsFillLockFill } from "react-icons/bs";
 
-export const LoginIcon = styled(BsFillPersonFill)`
+export const PersonIcon = styled(BsFillPersonFill)`
+  margin: 0 30px;
+  color: #676767;
+`;
+
+export const EnvelopeIcon = styled(BsEnvelopeFill)`
+  margin: 0 30px;
+  color: #676767;
+`;
+
+export const LockIcon = styled(BsFillLockFill)`
   margin: 0 30px;
   color: #676767;
 `;

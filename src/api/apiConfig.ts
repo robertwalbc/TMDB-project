@@ -1,10 +1,8 @@
 import axios from 'axios';
-import { BASE_URL, API_KEY } from '../enviroments';
+import { BASE_URL, API_KEY } from '../enviroments.ts';
 
 const instance = axios.create({
-  baseURL: BASE_URL,
-  headers: {'Content-Type': 'application/json', 'api-key': API_KEY},
+  baseURL: BASE_URL
   });
-});
 
 export default instance;
