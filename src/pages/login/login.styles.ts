@@ -26,6 +26,9 @@ export const Container = styled.div`
   width: 600px;
   background: #fff;
   padding-bottom: 30px;
+  border: 10px solid transparent;
+  border-image: linear-gradient(to right, black, gray);
+  border-image-slice: 1;
 `;
 
 export const Header = styled.div`
