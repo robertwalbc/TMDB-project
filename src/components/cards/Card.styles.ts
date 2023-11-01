@@ -19,7 +19,7 @@ export const CardReleaseDate = styled.p`
 `;
 
 export const CardImage = styled.img`
-  max-width: 100%;
+  max-width: 40%;
 `;
 
 export const CardContent = styled.div`

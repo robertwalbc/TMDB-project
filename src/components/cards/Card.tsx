@@ -16,7 +16,7 @@ function MovieCard( {movieID} ) {
         setImageURL(response?.data?.poster_path || 'default_image_url');
         setMovieName(response?.data?.title || 'No title available');
         setReleaseDate(new Date(response?.data?.release_date).toLocaleString() || 'No release date available');
-        console.log('response', response);
+        //console.log('response', response);
       } catch (error) {
         console.error('Error fetching Movie data:', error);
         setImageURL('default_image_url');

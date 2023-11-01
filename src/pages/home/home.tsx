@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { getNowPlayingMovies, getPopularMovies, getTopRatedMovies, getUpcomingMovies } from '../../api/services.ts';
-import MovieCard from '../../components/cards/Card.tsx';
+import MovieCarousel from '../../components/carousel/Carousel.tsx';
 import { CardGrid } from './home.styles.ts';
 
 
@@ -35,11 +35,9 @@ function Home() {
       <div>home</div>
       <CardGrid>
           {loading ? <p>loading...</p> :
-          nowPlaying?.map(mov => 
-          <MovieCard
-          key={mov.id}
-          movieID={mov.id}
-          />)}
+          <MovieCarousel
+          movies={nowPlaying}
+          />}
       </CardGrid>
     </>
   )
